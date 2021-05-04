@@ -1,0 +1,99 @@
+16:58:02 **** Build of configuration Debug for project RCSV1.2 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:136:3: warning: implicit declaration of function 'srand' [-Wimplicit-function-declaration]
+   srand(time(0));
+   ^
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+Finished building: ../Project_Settings/Startup_Code/startup.c
+ 
+Building file: ../Generated_Code/AD1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AD1.d" -MT"Generated_Code/AD1.o" -c -o "Generated_Code/AD1.o" "../Generated_Code/AD1.c"
+Finished building: ../Generated_Code/AD1.c
+ 
+Building file: ../Generated_Code/AS1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AS1.d" -MT"Generated_Code/AS1.o" -c -o "Generated_Code/AS1.o" "../Generated_Code/AS1.c"
+Finished building: ../Generated_Code/AS1.c
+ 
+Building file: ../Generated_Code/ASerialLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+Finished building: ../Generated_Code/ASerialLdd1.c
+ 
+Building file: ../Generated_Code/AdcLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AdcLdd1.d" -MT"Generated_Code/AdcLdd1.o" -c -o "Generated_Code/AdcLdd1.o" "../Generated_Code/AdcLdd1.c"
+Finished building: ../Generated_Code/AdcLdd1.c
+ 
+Building file: ../Generated_Code/Bit1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Bit1.d" -MT"Generated_Code/Bit1.o" -c -o "Generated_Code/Bit1.o" "../Generated_Code/Bit1.c"
+Finished building: ../Generated_Code/Bit1.c
+ 
+Building file: ../Generated_Code/BitIoLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+Finished building: ../Generated_Code/BitIoLdd1.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/DA1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/DA1.d" -MT"Generated_Code/DA1.o" -c -o "Generated_Code/DA1.o" "../Generated_Code/DA1.c"
+Finished building: ../Generated_Code/DA1.c
+ 
+Building file: ../Generated_Code/DacLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/DacLdd1.d" -MT"Generated_Code/DacLdd1.o" -c -o "Generated_Code/DacLdd1.o" "../Generated_Code/DacLdd1.c"
+Finished building: ../Generated_Code/DacLdd1.c
+ 
+Building file: ../Generated_Code/FC1_PH.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/FC1_PH.d" -MT"Generated_Code/FC1_PH.o" -c -o "Generated_Code/FC1_PH.o" "../Generated_Code/FC1_PH.c"
+Finished building: ../Generated_Code/FC1_PH.c
+ 
+Building file: ../Generated_Code/MCUC1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/MCUC1.d" -MT"Generated_Code/MCUC1.o" -c -o "Generated_Code/MCUC1.o" "../Generated_Code/MCUC1.c"
+Finished building: ../Generated_Code/MCUC1.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Pins1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Pins1.d" -MT"Generated_Code/Pins1.o" -c -o "Generated_Code/Pins1.o" "../Generated_Code/Pins1.c"
+Finished building: ../Generated_Code/Pins1.c
+ 
+Building file: ../Generated_Code/TU1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TU1.d" -MT"Generated_Code/TU1.o" -c -o "Generated_Code/TU1.o" "../Generated_Code/TU1.c"
+Finished building: ../Generated_Code/TU1.c
+ 
+Building file: ../Generated_Code/WAIT1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"E:/Experiment/RCS_exp1.3/Static_Code/System" -I"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/Include" -I"E:/Experiment/RCS_exp1.3/Static_Code/PDD" -I"E:/Experiment/RCS_exp1.3/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"E:/Experiment/RCS_exp1.3/Sources" -I"E:/Experiment/RCS_exp1.3/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/WAIT1.d" -MT"Generated_Code/WAIT1.o" -c -o "Generated_Code/WAIT1.o" "../Generated_Code/WAIT1.c"
+Finished building: ../Generated_Code/WAIT1.c
+ 
+Building target: RCSV1.2.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "E:/Experiment/RCS_exp1.3/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"E:/Experiment/RCS_exp1.3/Project_Settings/Linker_Files" -L"E:\Experiment\ARM.CMSIS.5.5.1\CMSIS/DSP/Lib/GCC" -Wl,-Map,"RCSV1.2.map" -specs=nano.specs -specs=nosys.specs -o "RCSV1.2.elf"  ./Static_Code/System/CPU_Init.o ./Static_Code/System/Peripherals_Init.o ./Static_Code/System/Vectors.o  ./Sources/Events.o ./Sources/benchmark1.o ./Sources/benchmark2.o ./Sources/benchmark3.o ./Sources/de_syn.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/Bit1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/DA1.o ./Generated_Code/DacLdd1.o ./Generated_Code/FC1_PH.o ./Generated_Code/MCUC1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Pins1.o ./Generated_Code/TU1.o ./Generated_Code/WAIT1.o   -larm_cortexM4lf_math
+Finished building target: RCSV1.2.elf
+ 
+
+16:58:28 Build Finished (took 25s.390ms)
+

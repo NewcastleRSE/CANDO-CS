@@ -1,0 +1,154 @@
+19:12:35 **** Incremental Build of configuration Debug for project RCS_Box_2.2 ****
+make all 
+Building file: ../Static_Code/System/CPU_Init.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Static_Code/System/CPU_Init.d" -MT"Static_Code/System/CPU_Init.o" -c -o "Static_Code/System/CPU_Init.o" "../Static_Code/System/CPU_Init.c"
+Finished building: ../Static_Code/System/CPU_Init.c
+ 
+Building file: ../Static_Code/System/Peripherals_Init.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Static_Code/System/Peripherals_Init.d" -MT"Static_Code/System/Peripherals_Init.o" -c -o "Static_Code/System/Peripherals_Init.o" "../Static_Code/System/Peripherals_Init.c"
+Finished building: ../Static_Code/System/Peripherals_Init.c
+ 
+Building file: ../Static_Code/System/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Static_Code/System/Vectors.d" -MT"Static_Code/System/Vectors.o" -c -o "Static_Code/System/Vectors.o" "../Static_Code/System/Vectors.c"
+Finished building: ../Static_Code/System/Vectors.c
+ 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'ALGO_OnInterrupt':
+../Sources/Events.c:134:2: warning: passing argument 1 of 'AD1_GetValue8' from incompatible pointer type [enabled by default]
+  AD1_GetValue8(&rec_reg);                           // Obtain measurement (8 bits)
+  ^
+In file included from ../Sources/Events.h:37:0,
+                 from ../Sources/Events.c:30:
+C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code/AD1.h:183:6: note: expected 'byte *' but argument is of type 'short unsigned int *'
+ byte AD1_GetValue8(byte *Values);
+      ^
+../Sources/Events.c:157:2: warning: passing argument 3 of 'AS1_SendBlock' from incompatible pointer type [enabled by default]
+  tx_error = AS1_SendBlock(uart_tx_buf, UART_TX_PACKETS, &bytes_sent);
+  ^
+In file included from ../Sources/Events.h:45:0,
+                 from ../Sources/Events.c:30:
+C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code/AS1.h:271:6: note: expected 'word *' but argument is of type 'unsigned char *'
+ byte AS1_SendBlock(AS1_TComData *Ptr,word Size,word *Snd);
+      ^
+../Sources/Events.c: In function 'AS1_OnFullRxBuf':
+../Sources/Events.c:194:2: warning: passing argument 3 of 'AS1_RecvBlock' from incompatible pointer type [enabled by default]
+  rx_error = AS1_RecvBlock(uart_rx_buf, UART_RX_PACKETS, &bytes_rec);
+  ^
+In file included from ../Sources/Events.h:45:0,
+                 from ../Sources/Events.c:30:
+C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code/AS1.h:246:6: note: expected 'word *' but argument is of type 'unsigned char *'
+ byte AS1_RecvBlock(AS1_TComData *Ptr,word Size,word *Rcv);
+      ^
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/Phase_Shift_Algorithm.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Phase_Shift_Algorithm.d" -MT"Sources/Phase_Shift_Algorithm.o" -c -o "Sources/Phase_Shift_Algorithm.o" "../Sources/Phase_Shift_Algorithm.c"
+Finished building: ../Sources/Phase_Shift_Algorithm.c
+ 
+Building file: ../Sources/SW_Info.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/SW_Info.d" -MT"Sources/SW_Info.o" -c -o "Sources/SW_Info.o" "../Sources/SW_Info.c"
+../Sources/SW_Info.c: In function 'send_SW_version':
+../Sources/SW_Info.c:20:2: warning: implicit declaration of function 'AS1_SendBlock' [-Wimplicit-function-declaration]
+  tx_error = AS1_SendBlock(SW_VERSION, sizeof(SW_VERSION), &bytes_sent);
+  ^
+Finished building: ../Sources/SW_Info.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:71:2: warning: implicit declaration of function 'init_kernel' [-Wimplicit-function-declaration]
+  init_kernel(); // Initialise the kernels
+  ^
+Finished building: ../Sources/main.c
+ 
+Building file: ../Generated_Code/AD1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AD1.d" -MT"Generated_Code/AD1.o" -c -o "Generated_Code/AD1.o" "../Generated_Code/AD1.c"
+Finished building: ../Generated_Code/AD1.c
+ 
+Building file: ../Generated_Code/ALGO.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ALGO.d" -MT"Generated_Code/ALGO.o" -c -o "Generated_Code/ALGO.o" "../Generated_Code/ALGO.c"
+Finished building: ../Generated_Code/ALGO.c
+ 
+Building file: ../Generated_Code/AS1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AS1.d" -MT"Generated_Code/AS1.o" -c -o "Generated_Code/AS1.o" "../Generated_Code/AS1.c"
+Finished building: ../Generated_Code/AS1.c
+ 
+Building file: ../Generated_Code/ASerialLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+Finished building: ../Generated_Code/ASerialLdd1.c
+ 
+Building file: ../Generated_Code/AdcLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AdcLdd1.d" -MT"Generated_Code/AdcLdd1.o" -c -o "Generated_Code/AdcLdd1.o" "../Generated_Code/AdcLdd1.c"
+Finished building: ../Generated_Code/AdcLdd1.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/DA1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/DA1.d" -MT"Generated_Code/DA1.o" -c -o "Generated_Code/DA1.o" "../Generated_Code/DA1.c"
+Finished building: ../Generated_Code/DA1.c
+ 
+Building file: ../Generated_Code/DacLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/DacLdd1.d" -MT"Generated_Code/DacLdd1.o" -c -o "Generated_Code/DacLdd1.o" "../Generated_Code/DacLdd1.c"
+Finished building: ../Generated_Code/DacLdd1.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Pins1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Pins1.d" -MT"Generated_Code/Pins1.o" -c -o "Generated_Code/Pins1.o" "../Generated_Code/Pins1.c"
+Finished building: ../Generated_Code/Pins1.c
+ 
+Building file: ../Generated_Code/TU1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TU1.d" -MT"Generated_Code/TU1.o" -c -o "Generated_Code/TU1.o" "../Generated_Code/TU1.c"
+Finished building: ../Generated_Code/TU1.c
+ 
+Building file: ../Generated_Code/TU2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TU2.d" -MT"Generated_Code/TU2.o" -c -o "Generated_Code/TU2.o" "../Generated_Code/TU2.c"
+Finished building: ../Generated_Code/TU2.c
+ 
+Building file: ../Generated_Code/TimeDateLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TimeDateLdd1.d" -MT"Generated_Code/TimeDateLdd1.o" -c -o "Generated_Code/TimeDateLdd1.o" "../Generated_Code/TimeDateLdd1.c"
+Finished building: ../Generated_Code/TimeDateLdd1.c
+ 
+Building file: ../Generated_Code/TmDt1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TmDt1.d" -MT"Generated_Code/TmDt1.o" -c -o "Generated_Code/TmDt1.o" "../Generated_Code/TmDt1.c"
+Finished building: ../Generated_Code/TmDt1.c
+ 
+Building file: ../Generated_Code/WAIT1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DARM_MATH_CM4 -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/System" -I"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/Include" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/PDD" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Static_Code/IO_Map" -I"C:\Freescale\KDS_v3\eclipse\ProcessorExpert/lib/Kinetis/pdd/inc" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Sources" -I"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/WAIT1.d" -MT"Generated_Code/WAIT1.o" -c -o "Generated_Code/WAIT1.o" "../Generated_Code/WAIT1.c"
+Finished building: ../Generated_Code/WAIT1.c
+ 
+Building target: RCS_Box_2.2.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/ndf30/RCS_workspace/RCS_Box_2.2/Project_Settings/Linker_Files" -L"C:\Users\ndf30\RCS_workspace\ARM.CMSIS.5.5.1\CMSIS/DSP/Lib/GCC" -Wl,-Map,"RCS_Box_2.2.map" -specs=nano.specs -specs=nosys.specs -o "RCS_Box_2.2.elf"  ./Static_Code/System/CPU_Init.o ./Static_Code/System/Peripherals_Init.o ./Static_Code/System/Vectors.o  ./Sources/Events.o ./Sources/Phase_Shift_Algorithm.o ./Sources/SW_Info.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ALGO.o ./Generated_Code/AS1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/DA1.o ./Generated_Code/DacLdd1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Pins1.o ./Generated_Code/TU1.o ./Generated_Code/TU2.o ./Generated_Code/TimeDateLdd1.o ./Generated_Code/TmDt1.o ./Generated_Code/WAIT1.o   -larm_cortexM4lf_math
+Finished building target: RCS_Box_2.2.elf
+ 
+
+19:12:46 Build Finished (took 10s.887ms)
+

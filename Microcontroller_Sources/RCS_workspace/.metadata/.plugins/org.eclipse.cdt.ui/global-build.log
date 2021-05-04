@@ -1,0 +1,15 @@
+13:01:39 **** Incremental Build of configuration Debug for project ADC_DAC_NoPE ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: ADC_DAC_NoPE.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK22FN512xxx12_flash.ld" -Xlinker --gc-sections -L"C:/Users/ndf30/RCS_workspace/ADC_DAC_NoPE/Project_Settings/Linker_Files" -Wl,-Map,"ADC_DAC_NoPE.map" -specs=nano.specs -specs=nosys.specs -o "ADC_DAC_NoPE.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK22F51212.o ./Project_Settings/Startup_Code/system_MK22F51212.o   
+Finished building target: ADC_DAC_NoPE.elf
+ 
+13:01:44 **** Incremental Build of configuration Debug for project ADC_DAC_NoPE ****
+make all 
+make: Nothing to be done for 'all'.

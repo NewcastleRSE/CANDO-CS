@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RCS_Box_2.2/Debug/RCS_Box_2.1.map&apos; to &apos;RCS_Box_2.2.map&apos;" description="Rename resource &apos;RCS_Box_2.1.map&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/RCS_Box_2.1.map" name="RCS_Box_2.2.map" stamp="1581020749617" updateReferences="true"/>
+</session>

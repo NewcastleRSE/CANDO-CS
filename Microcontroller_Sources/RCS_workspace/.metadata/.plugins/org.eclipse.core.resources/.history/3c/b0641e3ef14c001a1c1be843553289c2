@@ -1,0 +1,46 @@
+/* ###################################################################
+**     Filename    : Algorithms.h
+**     Project     : RCS_Box_2.2
+**     Processor   : MK22FN512VDC12
+**     Component   : Events
+**     Version     : Driver 01.00
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2020-02-11, 17:04, # CodeGen: 0
+**     Abstract    :
+**
+** ###################################################################*/
+
+#ifndef __Algorithms_H
+#define __Algorithms_H
+/* MODULE Algorithms */
+
+typedef union
+{
+	struct
+	{
+		unsigned char phaseCond;
+		unsigned char gain;
+		unsigned char f;
+		unsigned char thr;
+		unsigned short setIntVal;
+		unsigned short kernelLen;
+	} phaseShift;
+
+	// More algorithms can be added here
+} algorithm;
+
+typedef struct
+{
+	unsigned char		algoOption;
+	unsigned char 		phaseOption;
+	unsigned char 		gainOption;
+	unsigned char 		dutyCycle;
+	unsigned char 		manLED;
+	unsigned short 		onTime;
+	unsigned short 		offTime;
+	unsigned short 		manLEDlvl;
+	algorithm			algorithm;
+} GUI;
+
+/* END Algorithms */
+#endif

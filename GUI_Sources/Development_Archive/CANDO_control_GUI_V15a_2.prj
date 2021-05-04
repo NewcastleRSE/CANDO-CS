@@ -1,0 +1,70 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1890095022" file="/home/lo99/Documents/Cando/InVitroBox_git/MiBoMiUn/Dev_candobox/dev_test_version/CANDO_control_GUI_V15a_2.prj" location="/home/lo99/Documents/Cando/InVitroBox_git/MiBoMiUn/Dev_candobox/dev_test_version" name="CANDO_control_GUI_V15a_2" target="target.mlapps" target-name="Package App">
+    <param.appname>CANDO_control_GUI_V15a_2</param.appname>
+    <param.authnamewatermark>Frances Hutchings</param.authnamewatermark>
+    <param.email>frances.hutchings@newcastle.ac.uk</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>This is an updated version of the CANDO control application to explore the use of the new Matlab App Designer tool</param.summary>
+    <param.description>This Application is an associated graphical user interface to the CANDO control program that sits inside a microcontroller unit.
+
+The application is display only and the main computation and data acquistion tasks are actually performed on the microcontroller.</param.description>
+    <param.screenshot>/tmp/tp69e2aeed_1bc5_4af1_8985_4f79fd776c93.png</param.screenshot>
+    <param.version>14.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>2e2e7b9b-5fa0-446d-ae3d-4d34f3cc13e1</param.guid>
+    <unset>
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/CANDO_control_GUI_V15a_2.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/ExperimentPlanner_V15a.mlapp</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/home/lo99/Documents/Cando/InVitroBox_git/MiBoMiUn/Dev_candobox" name="dev_test_version" optional="false">/home/lo99/Documents/Cando/InVitroBox_git/MiBoMiUn/Dev_candobox/dev_test_version</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/usr/local/MATLAB/R2019b</root>
+      <toolboxes>
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>5.3.0-53-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

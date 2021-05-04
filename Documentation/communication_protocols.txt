@@ -1,0 +1,96 @@
+Flag				Meaning
+
+1  				Start sending data. Ask for packet with algorithm output. 
+
+2				Stop sending data.	
+
+5				Please send version information. (What should be expected back?) 
+				Expect string 'RCSbox 2.x' Ascii encoded in bytes. So need to decode into acii and put on the GUI and into the save file.
+
+7 				Update In/Out selection (ASCI/ Microcontroller) 4 bits. Have a default where this 		
+				isn't sent and the microcontroller decides. [Not yet implemented in GUI]
+
+10				Update experiment as a whole (expect main parameters packet next, 30 bytes long.)
+
+
+11				Update parameters/ mode switch. (Expect main parameters packet, but just look at bytes 1, 18-26.) 
+
+200				Force manual reset of the connected microcontroller
+
+
+Main parameters packet:
+
+Bytes:
+
+1	Manual LED flag, basically ignore the algorithm and just listen to the final three bytes (testing, testing) 1 = manual mode, 0 = algorithm mode
+
+2	binary flag, 1 = set intensity, 0 = phase shift
+
+3	binary flag, 2 = pseudo randomised looping, 1 = sequential, 0 = no loops! (Skip loop code)
+
+4	Kernel length (part 1)
+
+5	Kernel length (part 2)
+
+6	Starting phase condition, degrees (NB: if third byte = 0, so no loop, then this is just the phase.) (byte 1 of 2)
+
+7	Starting phase condition, degrees (NB: if third byte = 0, so no loop, then this is just the phase.) (byte 2 of 2)
+
+8	Step size for looping through phases, degrees (from start: steps : end) If zero there is no loop. Expecting values from 0 - 180.
+
+9 	Final phase condition, degrees(byte 1 of 2)
+
+10 	Final phase condition, degrees(byte 2 of 2)
+
+11	Frequency (Hz)
+
+12	Starting gain condition (NB: if third byte = 0, so no loop, then this is just the gain.)
+
+13	Step size for looping through gain (from start: steps : end) If zero there is no loop.
+
+14 	Final gain condition
+
+15	Starting intensity condition (NB: if third byte = 0, so no loop, then this is just the gain.) If byte 1 = 0, ignore this.
+
+16	Step size for looping through intensity (from start: steps : end) If zero there is no loop. If byte 1 = 0, ignore this.
+
+17	Final intensity condition. If byte 1 = 0, ignore this.
+
+18 	Threshold value (applied post convolution)
+
+19	Time keeping, manual vs. automatic. 1 = automatic (using the next 2 flags), 0 = manual. This is mainly for testing, to allow direct control of the LED.
+
+20	On time (part 1) i.e., the length of time to have the algorithm applied for.
+
+21	On time (part 2)
+
+22	Off time (part 1) i.e., the length of time to have the algorithm turned off for between runs.
+
+23	Off time (part 2)
+
+24	LED level for manual mode (byte 1 of 2)
+
+25 	LED level for manual model (byte 2 of 2)
+
+26	LED on/off in manual mode 1 = ON, 0 = OFF
+
+27-29 	Currently not in use.
+
+30	Flag (this should be 10 or 11 for update parameters)
+
+
+Update ASIC packet:
+
+Bytes:
+
+1	isASICin boolean 1 for if we are using ASIC input 0 if we are using something else.
+
+2	isASICout boolean 1 for if we are using ASIC output 0 if we are using something else.
+
+3	elec_to_use a value representing what electrode to use, for the ASIC. Values from 1:n, where n is the number of possible electrodes.
+
+4	LEDout a value representing what light output to use, for the ASIC. Values from 1:n where n is the number of possible LED outputs.
+
+5-29	Currently not of use. 
+
+30	Flag - this should be 7.
