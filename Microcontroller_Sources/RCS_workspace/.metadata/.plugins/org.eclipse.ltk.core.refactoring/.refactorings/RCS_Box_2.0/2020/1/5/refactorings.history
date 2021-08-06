@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;RCS_Box_2.0/Sources/Algorithm.c&apos; to &apos;Phase_Shift_Algorithm.c&apos;" description="Rename resource &apos;Algorithm.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Sources/Algorithm.c" name="Phase_Shift_Algorithm.c" stamp="1580314263801" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;RCS_Box_2.0/Sources/Algorithm.h&apos; to &apos;Phase_Shift_Algorithm.h&apos;" description="Rename resource &apos;Algorithm.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Sources/Algorithm.h" name="Phase_Shift_Algorithm.h" stamp="1580314280508" updateReferences="true"/>
-</session>

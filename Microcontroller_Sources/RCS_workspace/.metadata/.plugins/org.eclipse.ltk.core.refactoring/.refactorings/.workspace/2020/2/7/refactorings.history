@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;RCS_Box_2.2/Sources/Algorithms.c&apos;" deleteContents="false" description="Delete resource &apos;RCS_Box_2.2/Sources/Algorithms.c&apos;" element1="/RCS_Box_2.2/Sources/Algorithms.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1581440881194"/>
-</session>

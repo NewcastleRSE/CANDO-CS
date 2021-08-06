@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;rcsv_exp3(recording)/static_code&apos; to &apos;Static_Code&apos;" description="Rename resource &apos;static_code&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="static_code" name="Static_Code" stamp="1560788407048" updateReferences="true"/>
-</session>
